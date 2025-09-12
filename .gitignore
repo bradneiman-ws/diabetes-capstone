@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.venv/
+.env/
+.envrc
+data/
+reports/figures/*
+!reports/figures/.gitkeep
+models/
+output/
+.DS_Store
+Thumbs.db

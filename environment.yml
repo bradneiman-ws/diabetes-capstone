@@ -1,0 +1,16 @@
+name: diabetes-capstone
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.10
+  - ipykernel
+  - jupyterlab
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - pytest
+  - pip
+  - pip:
+      - pyarrow

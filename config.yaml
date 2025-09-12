@@ -1,0 +1,12 @@
+# Training configuration for the Diabetes Capstone
+dataset:
+  kind: uci_hospitals   # or: pima
+
+leakage:
+  auto_drop: false      # if true, automatically drop suspected leakage columns
+  id_threshold: 0.90    # unique ratio above this is flagged as ID-like
+  corr_threshold: 0.95  # abs correlation with target above this is flagged
+
+columns:
+  drop: []              # explicit columns to drop (in addition to auto-drop if enabled)
+  allowlist: []         # NEVER drop columns that appear here (even if flagged)
