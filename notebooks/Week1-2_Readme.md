@@ -1,33 +1,23 @@
-# UCI Diabetes Dataset — Week 1–2 Project
+# Week 1–2 — UCI Diabetes Dataset
 
-## 📌 Overview
-This project uses the **Pima Indians Diabetes Dataset** (UCI ML Repository / Kaggle) as a hands-on exercise to practice the **end-to-end data science workflow**.  
-It is the **Week 1–2 deliverable** in my Data Science learning roadmap, focused on healthcare-relevant datasets.
+This folder contains the **Week 1–2 practice notebook** for my Data Science learning roadmap.  
+The goal is to get hands-on with a healthcare-relevant dataset and practice the end-to-end workflow.
 
-## 🎯 Objectives
-- Load and inspect the dataset
-- Explore data distributions and identify data quality issues
-- Handle missing and invalid values (imputation)
-- Visualize relationships between features and diabetes outcomes
-- Train baseline classification models:
-  - Logistic Regression
-  - Decision Tree
-  - k-Nearest Neighbors (kNN)
-- Compare model performance using accuracy, precision, recall, and F1-score
-- Reflect on findings, challenges, and next steps
+## 📌 Notebook
+- **`UCI_Diabetes_Week1-2_Starter.ipynb`**  
+  Covers:
+  - Data loading & inspection  
+  - Cleaning missing/invalid values  
+  - Exploratory plots  
+  - Baseline models (Logistic Regression, Decision Tree, kNN)  
+  - Performance metrics & reflections  
 
 ## 📊 Dataset
 - **Name:** Pima Indians Diabetes Database  
-- **Source:** [Kaggle Dataset Link](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)  
-- **Size:** 768 rows × 8 features + target  
-- **Target variable:** `Outcome`  
-  - `1` → Diabetes  
-  - `0` → No diabetes  
+- **Source:** [Kaggle](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)  
+- **Target:** `Outcome` → 1 = Diabetes, 0 = No diabetes  
 
-## 🛠️ Tech Stack
-- Python 3.x  
-- pandas, numpy  
-- matplotlib  
-- scikit-learn  
-
-## 📂 Project Structure
+## 🔮 Next Steps
+- Try feature engineering (BMI bins, interactions)  
+- Explore advanced models (Random Forest, XGBoost)  
+- Add results summary to main project README  
