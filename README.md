@@ -1,3 +1,5 @@
+[![Run tests](https://github.com/bradneiman-ws/diabetes-capstone/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/bradneiman-ws/diabetes-capstone/actions/workflows/tests.yml?query=branch%3Amain)
+
 [![CI](https://github.com/USER/REPO/actions/workflows/ci.yml/badge.svg)](#)
 
 # Diabetes Capstone (Healthcare Focus)
