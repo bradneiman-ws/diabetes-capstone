@@ -1,6 +1,11 @@
 [![Run tests](https://github.com/bradneiman-ws/diabetes-capstone/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/bradneiman-ws/diabetes-capstone/actions/workflows/tests.yml?query=branch%3Amain)
 
-[![CI](https://github.com/USER/REPO/actions/workflows/ci.yml/badge.svg)](#)
+[![CI](https://github.com/bradneiman-ws/diabetes-capstone/actions/workflows/ci.yml/badge.svg)](#)
+
+![Python](https://img.shields.io/badge/python-3.9%20|%203.10%20|%203.11-blue)
+
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
 
 # Diabetes Capstone (Healthcare Focus)
 
