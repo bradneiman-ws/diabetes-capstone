@@ -19,9 +19,9 @@
 | ID | Thread Title | Link | Why it exists (1 line) | Status |
 |---|---|---|---|---|
 | T‑01 | [Correlation like JMP in Python](https://github.com/bradneiman-ws/diabetes-capstone/issues/2) | [thread link] | Reproduce JMP scatterplot/correlation matrix in Python | In progress |
-| T‑02 | [Pairplots in Python](https://github.com/bradneiman-ws/diabetes-capstone/issues/3)) | [thread link](https://chatgpt.com/share/68c7d08e-756c-8002-a7af-5684f3aa8d3c))] | Learn seaborn pairplot and compare to JMP matrix | In progress |
-| T‑03 | [Git SSH / repo setup](https://github.com/users/bradneiman-ws/projects/1/views/1?pane=issue&itemId=128909890&issue=bradneiman-ws%7Cdiabetes-capstone%7C4)) | [thread link] | Set up GitHub repo and SSH key for commits | Open |
-| T‑04 | [F1 score explanation](https://github.com/users/bradneiman-ws/projects/1/views/1?pane=issue&itemId=128903882&issue=bradneiman-ws%7Cdiabetes-capstone%7C1)) | [thread link] | Understand F1 for model evaluation | Done |
+| T‑02 | [Pairplots in Python](https://github.com/bradneiman-ws/diabetes-capstone/issues/3) | [thread link](https://chatgpt.com/share/68c7d08e-756c-8002-a7af-5684f3aa8d3c)] | Learn seaborn pairplot and compare to JMP matrix | In progress |
+| T‑03 | [Git SSH / repo setup](https://github.com/users/bradneiman-ws/projects/1/views/1?pane=issue&itemId=128909890&issue=bradneiman-ws%7Cdiabetes-capstone%7C4) | [thread link] | Set up GitHub repo and SSH key for commits | Open |
+| T‑04 | [F1 score explanation](https://github.com/users/bradneiman-ws/projects/1/views/1?pane=issue&itemId=128903882&issue=bradneiman-ws%7Cdiabetes-capstone%7C1) | [thread link] | Understand F1 for model evaluation | Done |
 
 ---
 
