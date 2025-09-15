@@ -198,13 +198,12 @@ def quick_corr_plot(
 ):
     """
     Quick one-liner wrapper around scatter_matrix_with_corr.
-    - Reads CSV/Excel
-    - Auto-selects numeric columns (drops cols with too many NaNs)
-    - Saves both correlation matrix (CSV) and scatterplot matrix (PNG)
-    - Filenames include method and target for easy tracking
+    Saves outputs in the SAME directory as the input file.
+    Filenames include method and target for easy tracking.
     """
     import os
-    
+    import pandas as pd
+
     # --- Load data ---
     if filepath.lower().endswith(".csv"):
         df = pd.read_csv(filepath)
@@ -212,22 +211,16 @@ def quick_corr_plot(
         df = pd.read_excel(filepath)
     else:
         raise ValueError("Only CSV or Excel supported for now.")
-    
-    # --- Base name for outputs ---
-    base = os.path.splitext(os.path.basename(filepath))[0]
-    
-    # Method suffix
+
+    # --- Build output paths in the input's directory ---
+    in_dir  = os.path.dirname(os.path.abspath(filepath)) or "."
+    base    = os.path.splitext(os.path.basename(filepath))[0]
     method_suffix = method.lower()
-    
-    # Target suffix (cleaned to avoid spaces/symbols)
-    target_suffix = ""
-    if target is not None:
-        target_suffix = "_" + str(target).replace(" ", "").replace("/", "_")
-    
-    # --- Output filenames ---
-    save_table = f"{base}_corr_{method_suffix}{target_suffix}.csv"
-    save_fig   = f"{base}_scatter_matrix_{method_suffix}{target_suffix}.png"
-    
+    target_suffix = "" if target is None else "_" + str(target).replace(" ", "").replace("/", "_")
+
+    save_table = os.path.join(in_dir, f"{base}_corr_{method_suffix}{target_suffix}.csv")
+    save_fig   = os.path.join(in_dir, f"{base}_scatter_matrix_{method_suffix}{target_suffix}.png")
+
     # --- Run the full plotter ---
     corr, fig = scatter_matrix_with_corr(
         df,
@@ -242,7 +235,8 @@ def quick_corr_plot(
         save_fig=save_fig,
         show=show
     )
-    
+
     print(f"✅ Saved correlation matrix to {save_table}")
     print(f"✅ Saved scatterplot matrix to {save_fig}")
     return corr, fig
+
