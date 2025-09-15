@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.patches import Ellipse
 from matplotlib import colors as mcolors
+from matplotlib import cm
 
 # --- helper: covariance ellipse ---
 def confidence_ellipse(x, y, ax, n_std=2.0, **kwargs):
