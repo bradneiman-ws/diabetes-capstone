@@ -11,15 +11,15 @@
 - **Primary notebook(s):** `eda_correlation.ipynb`, `eda_pairplot.ipynb`
 - **Repo URL:** [diabetes-capstone](https://github.com/bradneiman-ws/diabetes-capstone)
 - **Owner:** Brad J. Neiman  
-- **Dates:** Week of ____ → ____
+- **Dates:** Week of 9/13/25 → ____
 
 ---
 
 ## 1) Thread Index (permalink each thread)
 | ID | Thread Title | Link | Why it exists (1 line) | Status |
 |---|---|---|---|---|
-| T‑01 | Correlation like JMP in Python | [thread link] | Reproduce JMP scatterplot/correlation matrix in Python | In progress |
-| T‑02 | Pairplots in Python | [thread link] | Learn seaborn pairplot and compare to JMP matrix | In progress |
+| T‑01 | [Correlation like JMP in Python]([url](https://github.com/bradneiman-ws/diabetes-capstone/issues/2)) | [thread link] | Reproduce JMP scatterplot/correlation matrix in Python | In progress |
+| T‑02 | [Pairplots in Python]([url](https://github.com/bradneiman-ws/diabetes-capstone/issues/3)) | [thread link] | Learn seaborn pairplot and compare to JMP matrix | In progress |
 | T‑03 | Git SSH / repo setup | [thread link] | Set up GitHub repo and SSH key for commits | Open |
 | T‑04 | F1 score explanation | [thread link] | Understand F1 for model evaluation | Done |
 
