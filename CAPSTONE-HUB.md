@@ -9,7 +9,7 @@
 - **Current focus / sprint goal (1–2 weeks):** Establish reproducible repo + core EDA (correlation matrices & pairplots).
 - **Dataset(s):** UCI Diabetes Dataset
 - **Primary notebook(s):** `eda_correlation.ipynb`, `eda_pairplot.ipynb`
-- **Repo URL:** [link TBD]
+- **Repo URL:** [diabetes-capstone](https://github.com/bradneiman-ws/diabetes-capstone)
 - **Owner:** Brad J. Neiman  
 - **Dates:** Week of ____ → ____
 
