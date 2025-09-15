@@ -1,4 +1,4 @@
-from src.metrics import classification_metrics
+from capstone.metrics import classification_metrics
 import numpy as np
 
 def test_metrics_shapes():
