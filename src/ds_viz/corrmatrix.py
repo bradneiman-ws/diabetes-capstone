@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.patches import Ellipse
-from matplotlib import cm, colors as mcolors
+from matplotlib import colors as mcolors
 
 # --- helper: covariance ellipse ---
 def confidence_ellipse(x, y, ax, n_std=2.0, **kwargs):
@@ -116,7 +116,7 @@ def scatter_matrix_with_corr(
 
     # visuals
     norm = mcolors.Normalize(vmin=-1, vmax=1)
-    cmap = cm.get_cmap(cmap_name)
+    cmap = plt.colormaps.get_cmap(cmap_name)
     fig, axes = plt.subplots(n, n, figsize=(cell_size_in * n, cell_size_in * n))
 
     diag_heights, diag_axes = [], []
