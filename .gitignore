@@ -71,3 +71,7 @@ models/
 output/
 .DS_Store
 Thumbs.db
+
+# Prevent accidental sub-folders under notebooks/
+notebooks/data/
+notebooks/reports/
