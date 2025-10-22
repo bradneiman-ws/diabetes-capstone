@@ -13,6 +13,34 @@ from .features import basic_preprocess
 from .utils import save_json
 from .leakage import detect_leakage
 
+import sys
+# allow importing paths.py from project root: src/ -> project root
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+from paths import report_path  # safe top-level path helper
+
+def _resolve_outdir(arg_output_dir: str) -> Path:
+    """
+    Resolve output directory:
+    - If absolute, honor it as-is.
+    - If relative, place under top-level reports/.
+    - Never allow notebooks/* (hard guard).
+    """
+    p = Path(arg_output_dir)
+    target = p if p.is_absolute() else report_path(p.as_posix())
+    if "notebooks" in target.resolve().parts:
+        raise RuntimeError(f"Refusing to write under notebooks/: {target}")
+    target.mkdir(parents=True, exist_ok=True)
+    return target
+# --- end of new block ---
+
+def parse_args():
+    p = argparse.ArgumentParser()
+    p.add_argument("--csv_path", type=str, required=True, help="Path to input CSV.")
+    p.add_argument("--kind", type=str, default=None, choices=["uci_hospitals","pima"], help="Dataset kind (overrides config).")
+    p.add_argument("--output_dir", type=str, default="models/run_001", help="Where to write predictions and artifacts.")
+    p.add_argument("--config", type=str, default="config.yaml", help="Path to YAML config.")
+    return p.parse_args()
+
 def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--csv_path", type=str, required=True, help="Path to input CSV.")
