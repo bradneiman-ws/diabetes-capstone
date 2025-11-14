@@ -26,6 +26,26 @@ notebooks/data/
 notebooks/reports/
 
 # ===========================
+# Reports
+# ===========================
+# Ignore generated content inside reports
+reports/figures/
+reports/tables/
+reports/tmp/
+reports/*.html
+reports/*.csv
+reports/*.json
+
+# Keep authored documents
+!reports/*.md
+!reports/*.pdf
+!reports/*.docx
+!reports/*.txt
+
+# Keep placeholder (optional)
+!reports/figures/.gitkeep
+
+# ===========================
 # Test / Coverage
 # ===========================
 .pytest_cache/
