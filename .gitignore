@@ -1,77 +1,66 @@
-# virtual envs
+# ===========================
+# Environment / Dependencies
+# ===========================
 .venv/
 venv/
+.env
+.env.*
+.envrc
 
-# python cache / build
+# ===========================
+# Python cache / build files
+# ===========================
 __pycache__/
 *.py[cod]
+*$py.class
 *.egg-info/
+.eggs/
 dist/
 build/
-.eggs/
 
-# notebooks
+# ===========================
+# Jupyter / Notebooks
+# ===========================
 .ipynb_checkpoints/
+notebooks/data/
+notebooks/reports/
 
-# test caches / coverage
+# ===========================
+# Test / Coverage
+# ===========================
 .pytest_cache/
 .coverage
 htmlcov/
 
-# editors / OS cruft
+# ===========================
+# IDE / OS files
+# ===========================
 .DS_Store
+Thumbs.db
 .idea/
 .vscode/
 
-# env files
-.env
-.env.*
-
-=====old======
-
-# Ignore data folder (don’t commit raw datasets)
+# ===========================
+# Data, Outputs, Figures
+# ===========================
 data/
+outputs/
+output/
+figures/
+reports/figures/
+archive/
+models/
 
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Keep placeholder if needed
+!reports/figures/.gitkeep
 
-# Jupyter notebook checkpoints
-.ipynb_checkpoints/
-
-# Virtual environments
-venv/
-.env/
-.venv/
-
-# MacOS system files
-.DS_Store
-
-# VS Code settings
-.vscode/
-
-# Logs and temporary files
+# ===========================
+# Logs / Temp
+# ===========================
 *.log
 *.tmp
 *.swp
 
-======OLD=========
-__pycache__/
-*.py[cod]
-*$py.class
-.ipynb_checkpoints/
-.venv/
-.env/
-.envrc
-data/
-reports/figures/*
-!reports/figures/.gitkeep
-models/
-output/
-.DS_Store
-Thumbs.db
-
-# Prevent accidental sub-folders under notebooks/
-notebooks/data/
-notebooks/reports/
+# ===========================
+# End of File
+# ===========================
